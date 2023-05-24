@@ -1,0 +1,132 @@
+% !Mode:: "TeX:UTF-8"
+
+\chapter{项目功能需求分析}
+
+\section{JDBC项目功能需求}
+JDBC项目为基于控制台的C/S结构应用程序，该应用对于功能实现的要求如下：
+\begin{enumerate}
+    \item 管理员入口
+    \begin{itemize}
+        \item {功能一} 管理员登录
+        \item {功能二} 展示所有商家列表
+        \item {功能三} 搜索商家
+        \item {功能四} 新建商家
+        \item {功能五} 删除商家
+    \end{itemize}
+
+    \item 商家入口
+    \begin{itemize}
+        \item {功能一} 商家登录
+        \item {功能二} 查看商家信息
+        \item {功能三} 修改商家信息
+        \item {功能四} 所属商品管理（二级菜单）：
+        \begin{itemize}
+            \item {二级功能一} 查看食品列表
+            \item {二级功能二} 新增食品
+            \item {二级功能三} 修改食品信息
+            \item {二级功能四} 删除食品
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+\section{前端项目需求分析}
+前端项目为基于HTML+CSS+JavaScript技术进行开发的企业级静态网页，对于功能实现的要求如下：
+\begin{enumerate}
+    \item 首页
+    \begin{itemize}
+        \item {主要功能} ：显示点餐分类信息
+        \item 动作
+        \begin{enumerate}
+            \item 点击点餐分类小图片后跳转至商家列表页面
+            \item 点击底部菜单栏中“订单”后跳转至历史订单页面
+        \end{enumerate}
+    \end{itemize}
+
+    \item 商家列表页
+    \begin{itemize}
+        \item {主要功能} ：显示商家列表信息
+        \item 动作
+        \begin{enumerate}
+            \item 点击某个商家后跳转至该商家的详细信息页
+        \end{enumerate}
+    \end{itemize}
+
+    \item 商家详细信息页
+    \begin{itemize}
+        \item {主要功能} ：显示商家详细信息
+        \item 动作
+        \begin{enumerate}
+            \item 点击“去结算”按钮后跳转至确认订单页
+        \end{enumerate}
+    \end{itemize}
+
+    \item 确认订单页
+    \begin{itemize}
+        \item {主要功能} 
+        \begin{enumerate}
+            \item 显示订单信息
+            \item 选择送货地址
+        \end{enumerate}
+        \item 动作\begin{enumerate}
+            \item 点击送货地址后跳转至送货地址列表页面
+            \item 点击“去支付”按钮后跳转至支付页
+        \end{enumerate}
+    \end{itemize}
+
+    \item 在线支付页
+    \begin{itemize}
+        \item {主要功能} ：显示订单信息及订单明细信息
+        \item 动作
+        \begin{enumerate}
+            \item 无
+        \end{enumerate}
+    \end{itemize}
+
+    \item 登录页
+    \begin{itemize}
+        \item {主要功能} ：用户登录
+        \item 动作
+        \begin{enumerate}
+            \item 点击“登录”按钮后跳转至上一级页面
+            \item 点击“去注册”按钮后跳转至注册页面
+        \end{enumerate}
+    \end{itemize}
+
+    \item 注册页
+    \begin{itemize}
+        \item {主要功能} ：注册新用户
+        \item 动作
+        \begin{enumerate}
+            \item 点击“注册”按钮后跳转至登录页面
+        \end{enumerate}
+    \end{itemize}
+
+    \item 历史订单页
+    \begin{itemize}
+        \item {主要功能} ：显示用户历史订单信息
+        \item 动作
+        \begin{enumerate}
+            \item 点击某个历史订单后可对订单明细信息进行显示和隐藏
+        \end{enumerate}
+    \end{itemize}
+\end{enumerate}
+
+\section{Servlet后端项目需求分析}
+servlet项目为基于VUE+Servlet+AJAX技术进行前后端分离开发的Web应用，其前端功能需求与项目二——前端项目的功能需求一致，因此本\\
+小节仅做后端项目的功能需求分析：
+\begin{enumerate}
+    \item 实现前端控制器，完成对URL的拦截以及对类名和方法名的解析
+    \item 实现controller层，完成对前端数据的获取以及对service的调用
+    \item 实现service层以进行数据管理、操作
+    \item 实现数据库连接并创建PO层、DAO层
+\end{enumerate}
+
+\section{SpringBoot后端项目需求分析}
+SpringBoot后端项目为基于VUE+SpringBoot+AJAX技术进行前后端分离开发的Web应用，其前端功能需求与项目二——前端项目的功能需求一致，因此本\\
+小节仅做后端项目的功能需求分析：
+\begin{enumerate}
+    \item 实现controller层，完成对前端数据的获取以及对service的调用
+    \item 实现Mapper层以进行对数据库的持久化操作
+   \item 实现service层以进行数据管理、操作
+    \item 实现数据库连接并创建PO层
+\end{enumerate}

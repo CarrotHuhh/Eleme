@@ -1,0 +1,143 @@
+% !Mode:: "TeX:UTF-8"
+
+\chapter{项目部署}
+
+\section{JDBC项目部署}
+
+
+\subsection {项目技术架构}
+    \begin{itemize}
+        \item JDK8
+        \item JDBC
+        \item MySql
+    \end{itemize}
+
+\subsection {开发工具}
+    \begin{itemize}
+        \item Intellij IDEA
+        \item mysql
+        \item navicat
+    \end{itemize}
+
+\subsection {安装部署指南}
+\begin{enumerate}
+    \item 安装 jdk、STS、MySql
+    \item 在 mysql 数据库中创建数据库 elm\_admin，使用数据库脚本elm\_admin.sql 创建数据库和初始数据。
+    \item 在 STS 中导入 javaSE 项目。
+    \item 打开 com/neusoft/elm/util/DBUtil 修改数据库密码
+\end{enumerate}
+
+\section{前端项目部署}
+
+\subsection{项目技术架构}
+    \begin{itemize}
+        \item HTML
+        \item CSS
+        \item JavaScript
+    \end{itemize}
+
+\subsection{开发工具}
+    \begin{itemize}
+        \item HBuilder
+        \item Chrome浏览器
+    \end{itemize}
+    
+\subsection{安装部署指南}
+\begin{enumerate}
+    \item 安装 hbuilder、chrome
+    \item 将工程导入到 hbuilder 中
+    \item 在 chrome 浏览器中运行 index.html 文件
+    \item 在 chrome 浏览器中使用 Toggle device toolbar 模拟手机浏览
+\end{enumerate}
+
+\section{Servlet项目部署}
+
+\subsection{项目前端技术架构}
+    \begin{itemize}
+        \item VUE-CLI
+    \end{itemize}
+
+\subsection{项目后端技术架构}
+    \begin{itemize}
+        \item JDK 1.8
+        \item Servlet
+        \item Tomcat 8.5
+        \item MySql
+    \end{itemize}
+    
+\subsection{开发工具}
+    \begin{itemize}
+        \item 前端项目：HBuilder
+        \item 后端项目：Spring-tool-suite
+        \item Tomcat 8.5
+        \item MySql
+        \item Navicat
+    \end{itemize}
+
+\subsection {安装部署指南}
+\begin{itemize}
+    \item {后端项目部署}
+        \begin{enumerate}
+            \item 安装 jdk、STS、Tomcat、MySql
+            \item 在 mysql 数据库中创建数据库 elm，使用数据库脚本 elm.sql 创建数据
+            库和初始数据。
+            \item 在 STS 中导入 elm 项目，并部署到 Tomcat 中。
+            \item 打开 com/neusoft/elm/util/DBUtil 修改数据库密码
+            \item 启动 Tomcat
+        \end{enumerate}
+    \item {前端项目部署}
+        \begin{enumerate}
+            \item 安装 Node.js、安装 Vue-Cli
+            \item 首先将前端工程导入到 hbuilder 中
+            \item 切换到项目路径下，使用 npm 安装依赖: npm install, 安装成功后，在
+            项目文件夹下出现 node\_modules 文件夹，里面是项目依赖。
+            \item 启动项目 npm run serve
+            \item 在浏览器中输入网址 http://localhost:8081，进入首页
+        \end{enumerate}
+\end{itemize}
+
+\section{SpringBoot项目部署}
+
+\subsection{项目前端技术架构}
+    \begin{itemize}
+        \item VUE-CLI
+    \end{itemize}
+
+\subsection{项目后端技术架构}
+    \begin{itemize}
+        \item JDK 1.8
+        \item SpringBoot
+        \item MyBatis
+        \item MySql
+        \item Maven
+    \end{itemize}
+    
+\subsection{开发工具}
+    \begin{itemize}
+        \item 前端项目：HBuilder
+        \item 后端项目：Spring-tool-suite
+        \item MySql
+        \item Navicat
+        \item Maven
+    \end{itemize}
+
+\subsection {安装部署指南}
+\begin{itemize}
+    \item {后端项目部署}
+        \begin{enumerate}
+            \item 安装 jdk、Maven、STS、MySql
+            \item 在 mysql 数据库中创建数据库 elm，使用数据库脚本 elm.sql 创建数据库和初始数据。
+            \item 在 STS 中导入 elmboot 的 Maven 项目。
+            \item 打开 SpringBoot 配置文件 application.properties 修改数据库密码。
+            \item 运行 ElmbootApplication
+        \end{enumerate}
+    \item {前端项目部署}
+        \begin{enumerate}
+            \item 安装 Node.js、安装 Vue-Cli
+            \item 首先将前端工程导入到 hbuilder 中
+            \item 切换到项目路径下，使用 npm 安装依赖: npm install, 安装成功后，在
+            项目文件夹下出现 node\_modules 文件夹，里面是项目依赖。
+            \item 启动项目 npm run serve
+            \item 在浏览器中输入网址 http://localhost:8081，进入首页
+        \end{enumerate}
+\end{itemize}
